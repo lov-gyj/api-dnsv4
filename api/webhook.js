@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     if (data.code) {
       orderId = data.code.toUpperCase();
     } else if (data.description) {
-      const match = data.description.match(/NEKO\d+/i);
+      const match = data.description.match(/DNSLOCKET\d+/i);
       if (match) orderId = match[0].toUpperCase();
     }
     
